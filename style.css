@@ -537,6 +537,24 @@ body{
     .second_block__body p{
         line-height: 20px;
     }
+    .third_block .container{
+        flex-direction: column;
+    }
+    .third_block__img_1, .third_block form{
+        position: relative;
+        
+    }
+    .third_block__text_1, .third_block form{
+        width: 100%;
+        text-align: center;
+    }
+    .third_block__text_1{
+        margin: 20px 0;
+    }
+    .third_block{
+        padding: 50px 0;
+        margin-top: -210px;
+    }
 }
 @media (max-width: 380px){
     .second_block h2{
