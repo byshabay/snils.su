@@ -388,6 +388,22 @@ body{
     background: linear-gradient( #20437a 25% , #142b4e );
     box-shadow:inset 0 2px 0 0 #90a2be;
 }
+.fifth_block{
+    text-align: center;
+}
+.fifth_block p{
+    color: #2d2d2d;
+    font-size: var(--text_17);
+    font-family: var(--trebuchet);
+    line-height: 24px;
+    margin: 90px auto 0;
+    width: 80%;
+}
+.fifth_block img{
+    margin: 90px auto 0;
+    width: 80%;
+}
+
 
 @media (max-width: 767px){
     .header__burger{
@@ -555,6 +571,14 @@ body{
         padding: 50px 0;
         margin-top: -210px;
     }
+    .fifth_block p, .fifth_block img{
+        margin: 50px auto 0;
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+    
 }
 @media (max-width: 380px){
     .second_block h2{
