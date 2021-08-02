@@ -690,6 +690,44 @@ body{
         width: 100%;
         text-align: justify;
     }
+    .footer__list ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer__list ul li{
+        width: 100%;
+    }
+    .footer__list ul li::before{
+        content: url('src/separator.png');
+        position: absolute;
+        display: block;
+        left: 0;
+    }
+    .footer__list ul li a{
+        line-height: 50px;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .footer__body{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .footer__info{
+        flex-direction: column;
+    }
+    .footer__info li{
+        line-height: 25px;
+    }
+    .footer__logo, .footer__body form span{
+        text-align: center;
+    }
+    .footer__logo a{
+        text-align: center;
+        margin: 25px 0;
+    }
+    .footer{
+        margin-bottom: -25px;
+    }
 }
 
 @media (max-width: 380px){
