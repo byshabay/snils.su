@@ -6,6 +6,7 @@
     --text_17: calc( (100vw - 300px)/(1160 - 300) * (16 - 11) + 11px);
     --text_18: calc( (100vw - 300px)/(1160 - 300) * (18 - 15) + 15px);
     --text_29: calc( (100vw - 300px)/(1160 - 300) * (29 - 17) + 17px);
+    --text_48: calc( (100vw - 300px)/(1160 - 300) * (42 - 34) + 34px);
 }
 *{
     margin: 0;
@@ -186,6 +187,7 @@ body{
     color: #272727;
     line-height: 24px;
     font-size: var(--text_16);
+    font-family: 'Trebuchet', Arial, Helvetica, sans-serif;
 }
 
 .first_block__head{
@@ -193,6 +195,7 @@ body{
     color: #fff;
     background-color: var(--red);
     font-size: var(--text_29);
+    font-family: 'Plumb', Arial, Helvetica, sans-serif;
     padding: 15px 0;
     text-align: center;
 }
@@ -226,6 +229,69 @@ body{
 .first_block__list li::before{
     content : url('src/check.png');
     margin-right: 10px;
+}
+.first_block__text_3{
+    display: block;
+    color: var(--red);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 54px auto 0;
+    font-size: var(--text_18);
+    width: 85%;
+}
+
+.second_block{
+    background: url('src/second_block__bkg.png') center no-repeat ;
+    background-size: cover;
+    text-transform: uppercase;
+    color: #fff;
+    height: auto;
+    margin-top: 90px;
+    padding: 45px 0 300px;
+    font-family: 'Trebuchet', Arial, Helvetica, sans-serif;
+}
+.second_block__text_1{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: var(--text_18);
+    text-align: center;
+}
+.second_block h2{
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+    font-size: var(--text_48);
+    font-weight: normal;
+    font-family: 'Plumb', Arial, Helvetica, sans-serif ;
+    background: url('src/second_block__h2.png') top no-repeat;
+    height: 90px;
+    padding-top: 12px;
+}
+.second_block__body{
+    display: flex;
+    justify-content: space-between;
+}
+.second_block__body div{
+    text-align: center;
+    width: 40%;
+}
+.second_block__body img{
+    width: 50%;
+    margin-top: 30px;
+}
+.second_block__body span{
+    margin: 35px 0;
+    display: block;
+    font-family: 'Plumb', Arial, Helvetica, sans-serif;
+    font-size: var(--text_29);
+}
+.second_block__body p{
+    text-transform: none;
+    display: block;
+    font-size: var(--text_17);
+    line-height: 27px;
 }
 
 @media (max-width: 767px){
@@ -361,4 +427,8 @@ body{
 @font-face {
     font-family: 'Plumb';
     src: url("src/PlumbRegular.ttf");
+}
+@font-face {
+    font-family: 'Trebuchet';
+    src: url("src/TrebuchetMS.ttf");
 }
