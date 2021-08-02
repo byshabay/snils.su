@@ -6,7 +6,7 @@
     --text_17: calc( (100vw - 300px)/(1160 - 300) * (16 - 11) + 11px);
     --text_18: calc( (100vw - 300px)/(1160 - 300) * (18 - 15) + 15px);
     --text_29: calc( (100vw - 300px)/(1160 - 300) * (29 - 17) + 17px);
-    --text_48: calc( (100vw - 300px)/(1160 - 300) * (42 - 34) + 34px);
+    --text_48: calc( (100vw - 300px)/(1160 - 300) * (42 - 20) + 20px);
 }
 *{
     margin: 0;
@@ -421,9 +421,34 @@ body{
     .first_block__body img{
         width: 90%;
     }
+    .second_block h2{
+        background-size: cover;
+        height: 70px;
+        padding-top: 26px;
+    }
+    .second_block__body{
+        flex-direction: column;
 
-
+    }
+    .second_block__body div{
+        width: 100%;
+    }
+    .second_block__body img{
+        width: 20%;
+    }
+    .second_block__body span{
+        margin: 10px 0;
+    }
+    .second_block__body p{
+        line-height: 20px;
+    }
 }
+@media (max-width: 380px){
+    .second_block h2{
+        padding-top: 12px;
+    }
+}
+
 @font-face {
     font-family: 'Plumb';
     src: url("src/PlumbRegular.ttf");
