@@ -3,6 +3,7 @@
     --grey: #434547;
     --max: 1160px;
     --text_17: calc( (100vw - 300px)/(1160 - 300) * (17 - 12) + 12px); /*font-size: 17px*/
+    --text_17: calc( (100vw - 300px)/(1160 - 300) * (16 - 11) + 11px);
     --text_18: calc( (100vw - 300px)/(1160 - 300) * (18 - 15) + 15px);
     --text_29: calc( (100vw - 300px)/(1160 - 300) * (29 - 17) + 17px);
 }
@@ -167,20 +168,65 @@ body{
     padding-top: 196px;
     background: url('src/bkg.png') center no-repeat;
     background-size: cover;
-    font-size: var(--text_29);
     text-align: right;
     height: 500px;
     text-transform: uppercase;
 }
-.bkg div{
+.bkg h1{
+    font-size: var(--text_29);
+    display: block;
     position: relative;
     margin-top: 418px;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
 
 }
+.first_block{
+    margin-top: 62px;
+    color: #272727;
+    line-height: 24px;
+    font-size: var(--text_16);
+}
 
-
+.first_block__head{
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--red);
+    font-size: var(--text_29);
+    padding: 15px 0;
+    text-align: center;
+}
+.first_block__text_1{
+    text-align: center;
+    width: 90%;
+    margin: 37px auto 0 ;
+}
+.first_block__body{
+    margin: 47px auto 0;
+    width: 90%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+.first_block__info{
+    flex: 2;
+    margin-left: 5%;
+}
+.first_block__body img{
+    flex: 1;
+}
+.first_block__text_2{
+    font-weight: bold;
+}
+.first_block__list li{
+    list-style-type: none;
+    margin-top: 24px;
+}
+.first_block__list li::before{
+    content : url('src/check.png');
+    margin-right: 10px;
+}
 
 @media (max-width: 767px){
     .header__burger{
@@ -293,8 +339,21 @@ body{
     .bkg{
         height: 150px;
     }
-    .bkg div{
+    .bkg h1{
         margin-top: 97px;
+    }
+    .first_block__body{
+        flex-direction: column;
+    }
+    .first_block__info{
+        text-align: justify;
+        margin-top: 47px;
+    }
+    .first_block__text_1{
+        text-align: justify;
+    }
+    .first_block__body img{
+        width: 90%;
     }
 
 
