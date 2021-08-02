@@ -2,8 +2,10 @@
     --red: #f5135c;
     --grey: #434547;
     --max: 1160px;
+    --plumb: 'Plumb',  Arial, Helvetica, sans-serif;
+    --trebuchet: 'Trebuchet', Arial, Helvetica, sans-serif;
     --text_17: calc( (100vw - 300px)/(1160 - 300) * (17 - 12) + 12px); /*font-size: 17px*/
-    --text_17: calc( (100vw - 300px)/(1160 - 300) * (16 - 11) + 11px);
+    --text_16: calc( (100vw - 300px)/(1160 - 300) * (16 - 11) + 11px);
     --text_18: calc( (100vw - 300px)/(1160 - 300) * (18 - 15) + 15px);
     --text_29: calc( (100vw - 300px)/(1160 - 300) * (29 - 17) + 17px);
     --text_48: calc( (100vw - 300px)/(1160 - 300) * (42 - 20) + 20px);
@@ -13,7 +15,7 @@
     padding: 0;
 }
 body{
-    font-family: "Plumb", Arial, Helvetica, sans-serif;
+    font-family: var(--plumb);
 }
 .header{
     text-transform: uppercase;
@@ -187,7 +189,7 @@ body{
     color: #272727;
     line-height: 24px;
     font-size: var(--text_16);
-    font-family: 'Trebuchet', Arial, Helvetica, sans-serif;
+    font-family: var(--trebuchet);
 }
 
 .first_block__head{
@@ -195,7 +197,7 @@ body{
     color: #fff;
     background-color: var(--red);
     font-size: var(--text_29);
-    font-family: 'Plumb', Arial, Helvetica, sans-serif;
+    font-family:  var(--plumb);
     padding: 15px 0;
     text-align: center;
 }
@@ -248,7 +250,7 @@ body{
     height: auto;
     margin-top: 90px;
     padding: 45px 0 300px;
-    font-family: 'Trebuchet', Arial, Helvetica, sans-serif;
+    font-family: var(--trebuchet);
 }
 .second_block__text_1{
     display: block;
@@ -264,7 +266,7 @@ body{
     display: block;
     font-size: var(--text_48);
     font-weight: normal;
-    font-family: 'Plumb', Arial, Helvetica, sans-serif ;
+    font-family:  var(--plumb);
     background: url('src/second_block__h2.png') top no-repeat;
     height: 90px;
     padding-top: 12px;
@@ -284,7 +286,7 @@ body{
 .second_block__body span{
     margin: 35px 0;
     display: block;
-    font-family: 'Plumb', Arial, Helvetica, sans-serif;
+    font-family:  var(--plumb);
     font-size: var(--text_29);
 }
 .second_block__body p{
@@ -292,6 +294,99 @@ body{
     display: block;
     font-size: var(--text_17);
     line-height: 27px;
+}
+.third_block .container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.third_block{
+    background: url('src/third_block__bkg.png') center no-repeat;
+    background-size: cover;
+    padding: 90px 0;
+    margin-top: -200px;
+}
+.third_block__text_1{
+    font-size: var(--text_29);
+    color: #fff;
+    font-family:  var(--plumb);
+    text-transform: uppercase;
+    width: 20%;
+    line-height: 36px;
+}
+.third_block__img_1{
+    position: absolute;
+    width: 35%;
+    left: 0;
+}
+.third_block__img_2{
+    background: url('src/arrow.png') center no-repeat;
+    width: 10%;
+    margin-left: 35%;
+}
+.third_block form{
+    position: absolute;
+    right: 0;
+    width: 25%;
+    padding: 45px 0 25px;
+    background: url('src/third_block__form.png') center no-repeat;
+    background-size: cover;
+    
+}
+.third_block form span{
+    font-family: var(--trebuchet);
+    font-size: var(--text_18);
+    color: #56575b;
+    line-height: 24px;
+    width: 70%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.third_block form input, .third_block form textarea{
+    position: relative;
+    display: block;
+    margin: 12px auto;
+    width: 80%;
+    padding: 5px 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+.third_block form hr{
+    display: block;
+    height: 1px;
+    background-color: #000;
+    border: 0;
+    opacity: 0.28;
+    width: 83%;
+    margin: 10px auto 0;
+}
+.third_block form ::placeholder{
+    font-style: italic;
+    color: #969494;
+    font-family: var(--trebuchet);
+    font-size: 14px;
+}
+.third_block form .third_block__submit{
+    background: linear-gradient(#7291b3 25%, #465983 );
+    font-family: var(--trebuchet);
+    font-size: 14px;
+    color: #fff;
+    width: 60%;
+    padding: 7px 0;
+    border-radius: 7px;
+    border: 0px ;
+    box-shadow:inset 0 2px 0 0 #becbda;
+
+}
+.third_block form .third_block__submit:hover{
+    background: linear-gradient( #9aabc5 25% , #647da6 );
+    box-shadow:inset 0 2px 0 0 #ced6e3;
+}
+.third_block form .third_block__submit:active{
+    background: linear-gradient( #20437a 25% , #142b4e );
+    box-shadow:inset 0 2px 0 0 #90a2be;
 }
 
 @media (max-width: 767px){
